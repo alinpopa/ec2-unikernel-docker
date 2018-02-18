@@ -11,3 +11,6 @@ RUN git clone https://github.com/GaloisInc/ec2-unikernel.git /home/opam/ec2-unik
 WORKDIR /home/opam/ec2-unikernel
 RUN cabal update && cabal install
 WORKDIR /home/opam/
+ADD ec2setup.sh /home/opam/
+ADD ec2deploy.sh /home/opam/
+
